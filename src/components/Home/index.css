@@ -1,0 +1,45 @@
+.home {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  color: #fff;
+  padding: 70px 40px;
+}
+
+/* Desktop view */
+@media screen and (min-width: 768px) {
+  .home {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  }
+
+  .home-heading {
+    font-size: 60px;
+    margin: 150px 0 30px 0;
+  }
+
+  .find-jod-container {
+    max-width: 500px;
+  }
+}
+
+.home-heading {
+  font-size: 45px;
+  margin: 200px 0 30px 0;
+}
+
+.find-jod-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.find-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(70, 101, 202);
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  display: flex;
+  margin: 5px;
+}
+.nav-list li {
+  margin: 5px;
+}
+.app-logo {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.logout {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2b55ca;
+  cursor: pointer;
+}

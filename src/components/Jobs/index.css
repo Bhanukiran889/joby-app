@@ -1,0 +1,244 @@
+/* Layout wrapper */
+.jobs-route-container {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 60px;
+  min-height: calc(100vh - 70px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #181818;
+}
+
+.profile-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #6366f1;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #7b93f5;
+}
+
+/* Filters */
+.filters {
+  margin-top: 20px;
+}
+
+.filters h2 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+.filters ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.filters li {
+  margin-bottom: 10px;
+}
+
+.filters label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Main Content */
+.main-content {
+  width: 75%;
+  height: calc(100vh - 70px);
+  padding: 20px;
+  overflow-y: auto;
+}
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.search-bar button {
+  padding: 10px 16px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Jobs List */
+.jobs-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Job Card */
+.job-card {
+  background-color: #272727;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.01);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.job-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.job-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #fbbf24;
+}
+
+.package {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.no-jobs {
+  text-align: center;
+}
+
+.no-jobs img {
+  width: 250px;
+}
+
+.no-jobs h1 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .jobs-route-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 15px;
+    overflow-y: unset;
+  }
+
+  .jobs-route-container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .jobs-route-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .jobs-route-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+  }
+
+  .search-bar {
+    gap: 10px;
+  }
+
+  .search-bar input {
+    border-radius: 4px;
+  }
+
+  .search-bar button {
+    border-radius: 4px;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-card h1 {
+    font-size: 16px;
+  }
+
+  .profile-card p {
+    font-size: 13px;
+  }
+}
