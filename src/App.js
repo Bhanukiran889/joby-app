@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import './App.css'
@@ -25,17 +25,16 @@ const ProtectedRoute = ({component: Component, ...rest}) => (
 )
 
 // Main App Component
+
 const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/login" component={Login} />
-      <ProtectedRoute exact path="/" component={Home} />
-      <ProtectedRoute exact path="/jobs" component={Jobs} />
-      <ProtectedRoute exact path="/jobs/:id" component={JobDetails} />
-      <Route path="/not-found" component={NotFound} />
-      <Redirect to="/not-found" />
-    </Switch>
-  </BrowserRouter>
+  <Switch>
+    <Route exact path="/login" component={Login} />
+    <ProtectedRoute exact path="/" component={Home} />
+    <ProtectedRoute exact path="/jobs" component={Jobs} />
+    <ProtectedRoute exact path="/jobs/:id" component={JobDetails} />
+    <Route path="/not-found" component={NotFound} />
+    <Redirect to="/not-found" />
+  </Switch>
 )
 
 export default App

@@ -9,7 +9,6 @@ class Login extends Component {
     password: '',
     errorMsg: '',
     showError: false,
-
   }
 
   onSubmitSuccess = jwtToken => {
@@ -63,9 +62,9 @@ class Login extends Component {
             alt="website logo"
           />
           <div className="pas">
-          <p>username: rahul</p>
-          <p>password: rahul@2021</p>
-          <p></p>
+            <p>username: rahul</p>
+            <p>password: rahul@2021</p>
+            <p />
           </div>
           <form className="form" onSubmit={this.handleSubmit}>
             <label htmlFor="username">USERNAME</label>
